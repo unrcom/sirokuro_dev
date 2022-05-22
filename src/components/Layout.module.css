@@ -1,0 +1,40 @@
+.LayoutMain {
+  display: flex;
+  width: 100vw;
+  flex: 1 1 0%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Bgblack {
+  background-color: black;
+}
+.Bgblack .Text {
+  color: white;
+}
+.Bgblack .Text:hover {
+  color: black;
+}
+.Title {
+  color: black;
+  cursor: pointer;
+}
+.Footer {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-top-width: 1px;
+}
+/* "flex h-12 w-full items-center justify-center border-t" */
+.Copy {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+/* "flex items-center" */
+.TextWhite {
+  color: white;
+  text-align: center;
+}

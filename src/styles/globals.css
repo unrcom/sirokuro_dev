@@ -1,0 +1,118 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.Banner {
+  height: 700px;
+  position: relative;
+}
+.Banner .Media {
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: 300ms;
+  cursor: pointer;
+}
+.Banner .Media .MediaCaption {
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  opacity: 0.6;
+  width: 100%;
+  height: 10%;
+  font-size: 36px;
+  font-weight: 200;
+  transition: 300ms;
+  cursor: pointer;
+}
+.Banner .Media .SiroMediaCaption {
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  background-color: white;
+  color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 10%;
+  font-size: 36px;
+  font-weight: 200;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.Banner .Media .MediaCaption:hover {
+  opacity: 0.8;
+}
+.Banner .Media:hover {
+  filter: brightness(150%);
+}
+.Banner .BannerGrid {
+  height: 100%;
+  position: relative;
+}
+.Banner .Content {
+  text-overflow: ellipsis;
+  position: relative;
+  /* position: absolute; */
+  top: 50%;
+  left: 30%;
+  bottom: 0;
+  color: black;
+  background-color: white;
+  opacity: 0.6;
+  width: 100%;
+  height: 50%;
+  /* height: 100%; */
+  cursor: pointer;
+  padding: 30px;
+  transition: 300ms;
+  /* margin: auto; */
+}
+/* .Banner .Content:hover,
+  .Banner .Content:active {
+    background-color: tomato;
+  } */
+.Banner .Content:hover .ViewButton,
+.Banner .Content:active .ViewButton {
+  background-color: white;
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.Banner .Content .Title {
+  font-size: 42px;
+  font-weight: 500;
+}
+.Banner .Content .Caption {
+  margin-top: 10px;
+  font-size: 24px;
+}
+.Banner .Content .ViewButton {
+  margin-top: 40px;
+  color: white;
+  font-size: 24px;
+  border: 3px solid white;
+  text-transform: capitalize;
+  transition: 200ms;
+}
+.text-center {
+  text-align: center;
+}
