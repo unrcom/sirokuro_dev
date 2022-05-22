@@ -155,8 +155,8 @@ export const Layout: FC<Title> = ({ children, title = "sirokuro.site" }) => {
               </Typography>
             </Link>
             <Link href="/Auth">
-              {/* {user ? "ログアウト" : "ログイン"} */}
-              ログイン
+              {user ? "ログアウト" : "ログイン"}
+              {/* ログイン */}
             </Link>
           </Toolbar>
         </AppBar>
