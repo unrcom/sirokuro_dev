@@ -40,7 +40,7 @@ const DemoCarousel: NextPage = () => {
         autoPlay={true}
         animation={"fade"}
         indicators={true}
-        timeout={500}
+        // timeout={500}
         cycleNavigation={true}
         navButtonsAlwaysVisible={false}
         navButtonsAlwaysInvisible={false}

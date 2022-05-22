@@ -12,6 +12,7 @@ import { Banner } from "../components/Banner";
 const DemoSwiper: NextPage = () => {
   const items = [
     {
+      key: 1,
       name: "",
       caption: "vs",
       siroName: "Macbook Pro",
@@ -20,6 +21,7 @@ const DemoSwiper: NextPage = () => {
       kuroImage: "https://source.unsplash.com/featured/?iphone",
     },
     {
+      key: 2,
       name: "Home Appliances",
       caption: "vs",
       siroName: "Washing Machine WX9102",
@@ -28,6 +30,7 @@ const DemoSwiper: NextPage = () => {
       kuroImage: "https://source.unsplash.com/featured/?vacuum,cleaner",
     },
     {
+      key: 3,
       name: "Decoratives",
       caption: "vs",
       siroName: "Living Room Lamp",
@@ -58,10 +61,11 @@ const DemoSwiper: NextPage = () => {
         // loopAdditionalSlides={1}
         speed={500}
       >
-        {items.map((banneritem, index) => {
+        {/* {items.map((banneritem, index) => { */}
+        {items.map((banneritem) => {
           return (
-            <SwiperSlide>
-              <Banner bnnr={banneritem} key={index} />
+            <SwiperSlide key={banneritem.key}>
+              <Banner bnnr={banneritem} />
             </SwiperSlide>
           );
         })}

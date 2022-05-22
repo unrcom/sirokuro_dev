@@ -18,10 +18,11 @@ type BannerItem = {
 
 type Props = {
   bnnr: BannerItem;
-  key: number;
+  // key: number;
 };
 
-export const Banner: FC<Props> = ({ bnnr, key }) => {
+// export const Banner: FC<Props> = ({ bnnr, key }) => {
+export const Banner: FC<Props> = ({ bnnr }) => {
   //   if (props.newProp) console.log(props.newProp);
   //   const contentPosition = props.contentPosition
   //     ? props.contentPosition
@@ -36,7 +37,7 @@ export const Banner: FC<Props> = ({ bnnr, key }) => {
   const kuroAlt = bnnr.kuroName + "に投票!";
 
   const content = (
-    <Grid item xs={2} key={key}>
+    <Grid item xs={2} key={bnnr.name}>
       <CardContent className="Content">
         {/* <Typography className="Title">{bnnr.name}</Typography> */}
 
